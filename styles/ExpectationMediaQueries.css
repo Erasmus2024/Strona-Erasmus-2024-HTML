@@ -1,0 +1,15 @@
+@media only screen and (max-width: 950px) {
+  .expectation {
+    width: 48vw;
+  }
+  .expectation .content-container .content {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .expectation {
+    width: 100vw;
+  }
+}
+
+/*# sourceMappingURL=ExpectationMediaQueries.css.map */

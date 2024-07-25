@@ -1,0 +1,122 @@
+@media only screen and (max-width: 1100px) {
+  .hero-menu {
+    flex-direction: column;
+    gap: 50px;
+  }
+  footer .project-details-container .partners img {
+    height: 8vh;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .description-text-image {
+    flex-direction: column !important;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  .description-text-image .description-text {
+    text-align: center;
+  }
+  .description-text-image img {
+    width: 50vw;
+    height: 30vw;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .show-hide-navbar {
+    display: block;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 999;
+  }
+  .show-hide-navbar div {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+  }
+  .show-hide-navbar div:hover {
+    cursor: pointer;
+  }
+  .description-text-image img {
+    width: 70vw;
+    height: 45vw;
+  }
+  .hero {
+    align-items: start;
+    padding-top: 70px;
+  }
+  .main-navbar {
+    background-color: white;
+    position: fixed;
+    left: -101vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+  }
+  .main-navbar .navbar-logo {
+    font-size: 30px;
+  }
+  .main-navbar .navbar-menu {
+    flex-direction: column;
+    font-size: 20px;
+  }
+  .expanded {
+    left: 0;
+  }
+  .process table td, .process table th {
+    font-size: 10px;
+  }
+  .process .link-button {
+    padding: 0.5vh 0.5vw;
+  }
+  .process .link-button .label {
+    font-size: 8px;
+  }
+  .process .link-button .icon {
+    height: 8px;
+  }
+  .attendees table td, .attendees table th {
+    font-size: 10px;
+  }
+  footer .project-details-container .project-details {
+    font-size: 12px;
+  }
+  footer .project-details-container .partners img {
+    height: 6vh;
+  }
+  footer .authors-social-media .social-media .link .fb, footer .authors-social-media .social-media .link .youtube {
+    height: 2.5vh;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .expectations .description-content .expectations-control .left-arrow, .expectations .description-content .expectations-control .right-arrow {
+    width: 6vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .description-text-image img {
+    width: 85vw;
+    height: 57vw;
+  }
+  footer .project-details-container .project-details {
+    font-size: 8px;
+  }
+  footer .project-details-container .partners img {
+    height: 4vh;
+  }
+  footer .authors-social-media .authors {
+    font-size: 10px;
+  }
+}
+
+/*# sourceMappingURL=MainPageMediaQuery.css.map */

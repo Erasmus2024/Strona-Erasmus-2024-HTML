@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pl_PL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZSEiI Erasmus+</title>
+    <meta
+      name="description"
+      content="Oficjalna Strona Zespołu Szkół Elektronicznych i Informatycznych w Sosnowcu podsumowująca projekt Erasmus+ w roku 2024"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/erasmus2024/styles/MainPage.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/erasmus2024/styles/MainPageMediaQuery.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/erasmus2024/styles/Gallery.css"
+    />
+    <link rel="icon" href="/erasmus2024/favicon.png" />
+  </head>
+  <body>
+    <div class="container">
+      <nav id="navbar" class="main-navbar">
+        <div class="navbar-logo">
+          <span class="navbar-logo-first-element">Erasmus+ 2024 | </span>
+          <span class="navbar-logo-second-element">Hiszpania</span>
+        </div>
+        <div class="navbar-menu">
+          <a href="/erasmus2024/#top" class="navbar-menu-item">
+            Strona główna
+          </a>
+          <a href="/erasmus2024/#o-projekcie" class="navbar-menu-item">
+            O projekcie
+          </a>
+          <a href="/erasmus2024/#lista-uczniow" class="navbar-menu-item">
+            Lista uczesników
+          </a>
+          <a href="/erasmus2024/gallery" class="navbar-menu-item"> Galeria </a>
+          <a href="/erasmus2024/posters" class="navbar-menu-item"> Plakaty </a>
+        </div>
+        <div class="show-hide-navbar" onClick="expandNavbar()">
+          <div class="first-line"></div>
+          <div class="second-line"></div>
+          <div class="third-line"></div>
+        </div>
+        <script type="text/javascript" defer>
+          const navbar = document.getElementById("navbar");
+
+          let isExpanded = false;
+          let isShadow = false;
+
+          const expandNavbar = () => {
+            isExpanded = !isExpanded;
+            setNavbarClass();
+          };
+
+          const setNavbarClass = () => {
+            navbar.className = `main-navbar ${
+              isShadow ? "navbar-shadow" : ""
+            } ${isExpanded ? "expanded" : ""}`;
+          };
+
+          document.addEventListener("scroll", (e) => {
+            window.scrollY > 0 ? (isShadow = true) : (isShadow = false);
+            setNavbarClass();
+          });
+        </script>
+      </nav>
+
+      <div class="choose-videos-gallery-container">
+        <div class="wrapper-container right-underline">
+          <div class="videos-pick-wrapper" onclick="GoToVideosGallery()">
+            Galeria filmów
+          </div>
+          <div class="gallery-pick-wrapper" onclick="GoToPhotosGallery()">
+            Galeria zdjęć
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript" defer>
+        const GoToPhotosGallery = () =>
+          window.location.assign("/erasmus2024/gallery/Szkolenie");
+
+        const GoToVideosGallery = () =>
+          window.location.assign("/erasmus2024/gallery");
+      </script>
+
+      <div
+        class="photos-gallery-container"
+        style="padding: 0 50px 0 50px; margin-bottom: 100px"
+      >
+        <div class="gallery-picker">
+          <div class="wrapper-container left-underline">
+            <div class="gallery-pick" onclick="GoToPhotosTrainingGallery()">
+              Szkolenie
+            </div>
+            <div class="gallery-pick" onclick="GoToPhotosTripsGallery()">
+              Wycieczki
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" defer>
+          const GoToPhotosTrainingGallery = () =>
+            window.location.assign("/erasmus2024/gallery/Szkolenie");
+
+          const GoToPhotosTripsGallery = () =>
+            window.location.assign("/erasmus2024/gallery/Wycieczki");
+        </script>
+
+        <div class="photos-gallery-content-container">
+          <img
+            src="/erasmus2024/images/Szkolenie/IMG_0026.jpeg"
+            alt="Szkolenie-1"
+          />
+          <img
+            src="/erasmus2024/images/Szkolenie/IMG_0034.jpeg"
+            alt="Szkolenie-2"
+          />
+          <img
+            src="/erasmus2024/images/Szkolenie/IMG_20240520_125050.jpg"
+            alt="Szkolenie-3"
+          />
+          <img
+            src="/erasmus2024/images/Szkolenie/IMG_20240522_112946.jpg"
+            alt="Szkolenie-4"
+          />
+          <img
+            src="/erasmus2024/images/Szkolenie/IMG_4503.jpg"
+            alt="Szkolenie-5"
+          />
+          <img
+            src="/erasmus2024/images/Szkolenie/IMG_4536.jpg"
+            alt="Szkolenie-6"
+          />
+          <img
+            src="/erasmus2024/images/Szkolenie/IMG_9660.jpeg"
+            alt="Szkolenie-7"
+          />
+          <img
+            src="/erasmus2024/images/Szkolenie/IMG_9661.jpeg"
+            alt="Szkolenie-8"
+          />
+          <img
+            src="/erasmus2024/images/Szkolenie/IMG_9662.jpeg"
+            alt="Szkolenie-9"
+          />
+          <img
+            src="/erasmus2024/images/Szkolenie/IMG_9663.jpeg"
+            alt="Szkolenie-10"
+          />
+          <img
+            src="/erasmus2024/images/Szkolenie/IMG_9665.jpeg"
+            alt="Szkolenie-11"
+          />
+          <img
+            src="/erasmus2024/images/Szkolenie/IMG_9666.jpeg"
+            alt="Szkolenie-12"
+          />
+          <img
+            src="/erasmus2024/images/Szkolenie/IMG_9667.jpeg"
+            alt="Szkolenie-13"
+          />
+          <img
+            src="/erasmus2024/images/Szkolenie/IMG_9668.jpeg"
+            alt="Szkolenie-14"
+          />
+          <img
+            src="/erasmus2024/images/Szkolenie/IMG_9669.jpeg"
+            alt="Szkolenie-15"
+          />
+          <img
+            src="/erasmus2024/images/Szkolenie/IMG_9670.jpeg"
+            alt="Szkolenie-16"
+          />
+          <img
+            src="/erasmus2024/images/Szkolenie/IMG_9671.jpeg"
+            alt="Szkolenie-17"
+          />
+          <img
+            src="/erasmus2024/images/Szkolenie/IMG_9672.jpeg"
+            alt="Szkolenie-18"
+          />
+          <img
+            src="/erasmus2024/images/Szkolenie/IMG_9673.jpeg"
+            alt="Szkolenie-19"
+          />
+          <img
+            src="/erasmus2024/images/Szkolenie/IMG_9677.jpeg"
+            alt="Szkolenie-20"
+          />
+          <img
+            src="/erasmus2024/images/Szkolenie/IMG_9678.jpeg"
+            alt="Szkolenie-21"
+          />
+          <img
+            src="/erasmus2024/images/Szkolenie/IMG_9679.jpeg"
+            alt="Szkolenie-22"
+          />
+          <img
+            src="/erasmus2024/images/Szkolenie/IMG_9680.jpeg"
+            alt="Szkolenie-23"
+          />
+          <img
+            src="/erasmus2024/images/Szkolenie/IMG_9681.jpeg"
+            alt="Szkolenie-24"
+          />
+          <img
+            src="/erasmus2024/images/Szkolenie/IMG_9682.jpeg"
+            alt="Szkolenie-25"
+          />
+          <img
+            src="/erasmus2024/images/Szkolenie/IMG_9683.jpeg"
+            alt="Szkolenie-26"
+          />
+          <img
+            src="/erasmus2024/images/Szkolenie/IMG_9688.jpeg"
+            alt="Szkolenie-27"
+          />
+          <img
+            src="/erasmus2024/images/Szkolenie/IMG_9689.jpeg"
+            alt="Szkolenie-28"
+          />
+          <img
+            src="/erasmus2024/images/Szkolenie/IMG_9690.jpeg"
+            alt="Szkolenie-29"
+          />
+          <img
+            src="/erasmus2024/images/Szkolenie/IMG_9691.jpeg"
+            alt="Szkolenie-30"
+          />
+          <img
+            src="/erasmus2024/images/Szkolenie/IMG_9719.jpeg"
+            alt="Szkolenie-31"
+          />
+          <img
+            src="/erasmus2024/images/Szkolenie/IMG_9720.jpeg"
+            alt="Szkolenie-32"
+          />
+          <img
+            src="/erasmus2024/images/Szkolenie/IMG_9721.jpeg"
+            alt="Szkolenie-33"
+          />
+          <img
+            src="/erasmus2024/images/Szkolenie/received_2692359737593374.jpg"
+            alt="Szkolenie-34"
+          />
+        </div>
+      </div>
+
+      <footer>
+        <div class="project-details-container">
+          <div class="project-details">
+            Projekt nr 2023-1-PL01-KA121-VET-000122449 realizowany w ramach
+            akredytacji programu Erasmus+ <br />
+            Akcja "Kształcenie i Szkolenia Zawodowe" nr
+            2020-1-PL01-KA120-VET-095178
+          </div>
+          <div class="partners">
+            <a href="https://zse.edu.pl">
+              <img src="/erasmus2024/images/elektronik.png" alt="Elektronik" />
+            </a>
+            <img
+              src="/erasmus2024/images/ue.png"
+              alt="Współfinansowano ze środków Unii Europejskiej."
+            />
+            <img
+              src="/erasmus2024/images/logo_mobility_alpha.png"
+              alt="Universal Mobility"
+            />
+          </div>
+        </div>
+        <div class="authors-social-media">
+          <div class="authors">
+            <span>Stronę przygotowali: Michał Mikuła, Kamil Marczak</span>
+          </div>
+          <div class="social-media">
+            <a class="link" href="https://www.youtube.com/@ErasmusELEKTRONIK">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="youtube"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+                />
+              </svg>
+            </a>
+            <a
+              class="link"
+              href="https://www.facebook.com/profile.php?id=100067838746263"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="fb"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
